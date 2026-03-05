@@ -1,1 +1,108 @@
-/* NAVBAR - sticky scroll effect */ const navbar = document.getElementById('navbar'); window.addEventListener('scroll', () => { if (window.scrollY > 40) { navbar.classList.add('scrolled'); } else { navbar.classList.remove('scrolled'); } }, { passive: true }); /* FAQ ACCORDION */ function toggleFAQ(button) { const isOpen = button.classList.contains('open'); document.querySelectorAll('.faq__question').forEach(btn => { btn.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); const answerId = btn.getAttribute('aria-controls'); const answer = document.getElementById(answerId); if (answer) answer.classList.remove('open'); }); if (!isOpen) { button.classList.add('open'); button.setAttribute('aria-expanded', 'true'); const answerId = button.getAttribute('aria-controls'); const answer = document.getElementById(answerId); if (answer) answer.classList.add('open'); } } /* SCROLL REVEAL */ const revealTargets = [ '.social-proof__line', '.social-proof__stats .stat', '.section-title', '.section-body', '.mechanism__step', '.mechanism__card', '.pain-card', '.bio__content > *', '.bio__image-wrap', '.faq__item', '.cta-final__title', '.cta-final__body', '.cta-final .btn', ]; revealTargets.forEach(selector => { document.querySelectorAll(selector).forEach((el, i) => { el.classList.add('reveal'); if (i === 1) el.classList.add('reveal-delay-1'); if (i === 2) el.classList.add('reveal-delay-2'); if (i >= 3) el.classList.add('reveal-delay-3'); }); }); const observer = new IntersectionObserver( (entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' } ); document.querySelectorAll('.reveal').forEach(el => observer.observe(el)); /* SMOOTH ACTIVE NAV LINKS */ document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function (e) { const href = this.getAttribute('href'); if (href.length > 1) { e.preventDefault(); const target = document.querySelector(href); if (target) { const offset = 80; const top = target.getBoundingClientRect().top + window.scrollY - offset; window.scrollTo({ top, behavior: 'smooth' }); } } }); }); /* CTA BUTTONS */ setTimeout(() => { const heroCta = document.getElementById('cta-hero'); if (heroCta) { heroCta.animate([ { transform: 'scale(1)', boxShadow: '0 4px 24px rgba(90,125,90,0.28)' }, { transform: 'scale(1.03)', boxShadow: '0 8px 36px rgba(90,125,90,0.42)' }, { transform: 'scale(1)', boxShadow: '0 4px 24px rgba(90,125,90,0.28)' }, ], { duration: 1200, easing: 'ease-in-out' }); } }, 1800);
+/* ──────────────────────────────
+   NAVBAR — sticky scroll effect
+────────────────────────────── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+}, { passive: true });
+
+/* ──────────────────────────────
+   FAQ ACCORDION
+────────────────────────────── */
+function toggleFAQ(button) {
+  const isOpen = button.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq__question').forEach(btn => {
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    const answerId = btn.getAttribute('aria-controls');
+    const answer = document.getElementById(answerId);
+    if (answer) answer.classList.remove('open');
+  });
+  // Open clicked, unless it was already open
+  if (!isOpen) {
+    button.classList.add('open');
+    button.setAttribute('aria-expanded', 'true');
+    const answerId = button.getAttribute('aria-controls');
+    const answer = document.getElementById(answerId);
+    if (answer) answer.classList.add('open');
+  }
+}
+
+/* ──────────────────────────────
+   SCROLL REVEAL — IntersectionObserver
+────────────────────────────── */
+const revealTargets = [
+  '.social-proof__line',
+  '.social-proof__stats .stat',
+  '.section-title',
+  '.section-body',
+  '.mechanism__step',
+  '.mechanism__card',
+  '.pain-card',
+  '.bio__content > *',
+  '.bio__image-wrap',
+  '.faq__item',
+  '.cta-final__title',
+  '.cta-final__body',
+  '.cta-final .btn',
+];
+
+revealTargets.forEach(selector => {
+  document.querySelectorAll(selector).forEach((el, i) => {
+    el.classList.add('reveal');
+    if (i === 1) el.classList.add('reveal-delay-1');
+    if (i === 2) el.classList.add('reveal-delay-2');
+    if (i >= 3)  el.classList.add('reveal-delay-3');
+  });
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+);
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ──────────────────────────────
+   SMOOTH ACTIVE NAV LINKS
+────────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        const offset = 80;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }
+  });
+});
+
+/* ──────────────────────────────
+   CTA BUTTONS — micro-pulse on load
+────────────────────────────── */
+setTimeout(() => {
+  const heroCta = document.getElementById('cta-hero');
+  if (heroCta) {
+    heroCta.animate([
+      { transform: 'scale(1)', boxShadow: '0 4px 24px rgba(90,125,90,0.28)' },
+      { transform: 'scale(1.03)', boxShadow: '0 8px 36px rgba(90,125,90,0.42)' },
+      { transform: 'scale(1)', boxShadow: '0 4px 24px rgba(90,125,90,0.28)' },
+    ], { duration: 1200, easing: 'ease-in-out' });
+  }
+}, 1800);
