@@ -1,1 +1,343 @@
-<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>Nutricionista Landing</title> <link rel="stylesheet" href="style.css"> </head> <body> <nav> <div class="logo">Dra. Ana Lucia Veras</div>div> </nav> <header> <h1>Voce nao precisa de mais uma dieta.</h1> <p>Tratamento clinico baseado em evidencias.</p> <a href="#agendar" class="btn">Agendar</a>a> </header> <footer> <script src="main.js"></script> </footer> </body> </html></footer></p></h1></header></nav></body></title></head></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Ana Lúcia Veras | Nutricionista Clínica — São Paulo</title>
+  <meta name="description" content="Consultas de nutrição clínica baseadas em bioindividualidade metabólica. Mais de 1.200 pacientes atendidos. Agende sua avaliação." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">Dra. Ana Lúcia Veras</span>
+      <a href="#agendar" class="btn btn--outline btn--sm nav-cta">Agendar Consulta</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 1 — HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero__grid">
+
+      <div class="hero__content">
+        <span class="eyebrow">Nutrição Clínica de Precisão · São Paulo</span>
+
+        <h1 class="hero__headline">
+          Você não precisa de mais uma dieta.<br/>
+          <em>Você precisa do tratamento certo.</em>
+        </h1>
+
+        <p class="hero__sub">
+          Um protocolo clínico personalizado — baseado na sua bioquímica, rotina e histórico metabólico — para que você perca peso de forma definitiva, sem dietas genéricas ou restrições insustentáveis.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#agendar" class="btn btn--primary" id="cta-hero">
+            Quero minha Avaliação Metabólica
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <span class="hero__trust">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Agenda limitada · Vagas para este mês
+          </span>
+        </div>
+      </div>
+
+      <div class="hero__image-wrap">
+        <div class="hero__image-card">
+          <img src="portrait.png" alt="Dra. Ana Lúcia Veras — Nutricionista Clínica" class="hero__portrait" />
+          <div class="hero__badge">
+            <span class="hero__badge-num">1.200<sup>+</sup></span>
+            <span class="hero__badge-label">Pacientes atendidos</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 2 — PROVA SOCIAL SILENCIOSA
+  ═══════════════════════════════════════════ -->
+  <section class="social-proof" id="resultados">
+    <div class="container">
+      <p class="social-proof__line">
+        Mais de <strong>1.200 pacientes atendidos</strong> em 10 anos de clínica, com protocolos publicados no
+        <em>Brazilian Journal of Clinical Nutrition.</em>
+      </p>
+      <div class="social-proof__stats">
+        <div class="stat">
+          <span class="stat__num">10<sup>+</sup></span>
+          <span class="stat__label">Anos de experiência</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">1.200<sup>+</sup></span>
+          <span class="stat__label">Pacientes atendidos</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">94<sup>%</sup></span>
+          <span class="stat__label">Taxa de adesão ao protocolo</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat__num">3</span>
+          <span class="stat__label">Especializações clínicas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 3 — MECANISMO ÚNICO
+  ═══════════════════════════════════════════ -->
+  <section class="mechanism" id="metodo">
+    <div class="container mechanism__grid">
+
+      <div class="mechanism__text">
+        <span class="eyebrow eyebrow--dark">O Método</span>
+        <h2 class="section-title">Não é força de vontade.<br/>É protocolo clínico.</h2>
+        <p class="section-body">
+          A maioria dos planos alimentares falha porque ignora a bioquímica individual. Meu método integra três camadas de análise que a nutrição convencional raramente combina:
+        </p>
+
+        <ol class="mechanism__steps">
+          <li class="mechanism__step">
+            <span class="step-num">01</span>
+            <div>
+              <strong>Rastreamento Metabólico Avançado</strong>
+              <p>Análise de exames de composição corporal (DEXA ou bioimpedância tetrapolar), curva glicêmica e painel hormonal completo — para mapear onde seu metabolismo está bloqueado.</p>
+            </div>
+          </li>
+          <li class="mechanism__step">
+            <span class="step-num">02</span>
+            <div>
+              <strong>Prescrição por Crononutrição</strong>
+              <p>O timing das refeições é calibrado de acordo com seu cronotipo e ciclo circadiano, otimizando oxidação lipídica e sensibilidade à insulina sem cortar grupos alimentares.</p>
+            </div>
+          </li>
+          <li class="mechanism__step">
+            <span class="step-num">03</span>
+            <div>
+              <strong>Ajuste Dinâmico por Feedback Clínico</strong>
+              <p>Consultas de retorno com reavaliação objetiva de marcadores: peso, massa magra, glicemia de jejum e nível de energia — não apenas percepção subjetiva.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="mechanism__visual">
+        <div class="mechanism__card">
+          <div class="mcard__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="mcard__title">Resultado médio em 60 dias</h3>
+          <p class="mcard__value">−6,2 kg</p>
+          <p class="mcard__sub">de gordura corporal, preservando massa magra</p>
+        </div>
+        <div class="mechanism__card mechanism__card--accent">
+          <div class="mcard__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="mcard__title">Protocolo baseado em evidências</h3>
+          <p class="mcard__sub" style="font-size:0.95rem;margin-top:0.5rem;opacity:.85;">Todas as prescrições seguem diretrizes atualizadas da Sociedade Brasileira de Nutrição Clínica (SBNPE).</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 4 — AS 3 DORES
+  ═══════════════════════════════════════════ -->
+  <section class="pains" id="dores">
+    <div class="container">
+      <span class="eyebrow">Você se identifica?</span>
+      <h2 class="section-title pains__title">Situações que seus pacientes viviam<br/><em>antes</em> de chegar ao consultório</h2>
+
+      <div class="pains__grid">
+
+        <div class="pain-card">
+          <div class="pain-card__number">01</div>
+          <div class="pain-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v4H3zM3 10h18v4H3zM3 17h18v4H3z"/></svg>
+          </div>
+          <h3 class="pain-card__title">"Já fiz várias dietas e perco peso, mas recupero tudo."</h3>
+          <p class="pain-card__body">
+            Dietas restritivas geram adaptação metabólica: o organismo reduz o gasto energético basal para sobreviver. Aqui, a prescrição calórica é calculada ciclicamente para evitar esse platô e manter o metabolismo ativo durante todo o tratamento.
+          </p>
+          <span class="pain-card__resolve">↳ Protocolo de ciclagem calórica metabólica</span>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card__number">02</div>
+          <div class="pain-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 15s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <h3 class="pain-card__title">"Não consigo manter a dieta com minha rotina de trabalho."</h3>
+          <p class="pain-card__body">
+            Planos inflexíveis ignoram que a maioria das pessoas tem reuniões, viagens e jantares. O protocolo é construído em torno da sua agenda real — com alternativas práticas mapeadas para cada cenário da sua rotina.
+          </p>
+          <span class="pain-card__resolve">↳ Planejamento alimentar adaptativo por contexto</span>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card__number">03</div>
+          <div class="pain-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+          </div>
+          <h3 class="pain-card__title">"Não sei se estou evoluindo — minguei nos números, mas me sinto igual."</h3>
+          <p class="pain-card__body">
+            A balança mede massa total, não composição corporal. Aqui, o progresso é rastreado por marcadores objetivos: percentual de gordura, água corporal e marcadores inflamatórios — para que você veja a mudança real, mesmo quando o peso estagna.
+          </p>
+          <span class="pain-card__resolve">↳ Reavaliação de composição corporal a cada retorno</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 5 — BIO DE AUTORIDADE
+  ═══════════════════════════════════════════ -->
+  <section class="bio" id="sobre">
+    <div class="container bio__grid">
+
+      <div class="bio__image-wrap">
+        <img src="portrait.png" alt="Dra. Ana Lúcia Veras" class="bio__portrait" />
+      </div>
+
+      <div class="bio__content">
+        <span class="eyebrow eyebrow--dark">Sobre a Nutricionista</span>
+        <h2 class="section-title bio__name">Dra. Ana Lúcia Veras</h2>
+        <p class="bio__credentials">CRN-3 · 45.210 &nbsp;|&nbsp; Especialista em Nutrição Clínica &nbsp;|&nbsp; Membro da SBNPE</p>
+        <p class="section-body">
+          Graduada pela Universidade de São Paulo (USP) em 2014, com residência em Nutrição Clínica pelo Hospital das Clínicas. Especializou-se em <strong>modulação metabólica e intervenção dietoterápica para doenças crônicas</strong> na Universidade Federal de São Paulo (UNIFESP).
+        </p>
+        <p class="section-body">
+          É coautora de dois artigos publicados sobre <em>resistência à insulina e padrões alimentares mediterrâneos</em> e atua como preceptora de residentes do programa de Nutrição Clínica do HC-FMUSP. Seu consultório atende exclusivamente em formato <strong>semi-intensivo</strong> — com sessões iniciais mais frequentes para garantir adesão e ajuste fino do protocolo.
+        </p>
+
+        <ul class="bio__tags">
+          <li>USP — Graduação</li>
+          <li>HC-FMUSP — Residência</li>
+          <li>UNIFESP — Especialização</li>
+          <li>SBNPE — Membro ativo</li>
+          <li>2 artigos científicos</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DOBRA 6 — FAQ DE OBJEÇÕES
+  ═══════════════════════════════════════════ -->
+  <section class="faq" id="duvidas">
+    <div class="container faq__inner">
+      <span class="eyebrow">Antes de agendar</span>
+      <h2 class="section-title faq__title">Dúvidas frequentes</h2>
+
+      <div class="faq__list" id="faq-list">
+
+        <div class="faq__item" id="faq-1">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFAQ(this)">
+            <span>O plano alimentar aceita convênio ou tem valor fixo?</span>
+            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-answer-1" role="region">
+            <p>
+              As consultas são particulares. O valor da avaliação inicial (60 min) é <strong>R$ 320,00</strong> e os retornos (30–45 min) custam <strong>R$ 220,00</strong>. Muitos pacientes utilizam reembolso pelo plano de saúde — basta solicitar o recibo com CRN e CID ao final da consulta. Aceitamos PIX, cartão de crédito (em até 3×) e débito.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" id="faq-2">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFAQ(this)">
+            <span>Em quanto tempo verei resultados concretos?</span>
+            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-answer-2" role="region">
+            <p>
+              Nas <strong>primeiras 2 semanas</strong> há redução de retenção hídrica e melhora do nível de energia — mudanças mensuráveis na bioimpedância. Entre a 4ª e 8ª semana, 94% dos pacientes com boa adesão apresentam redução significativa de gordura corporal. Resultados definitivos de recomposição corporal são consolidados entre <strong>3 e 6 meses</strong>, dependendo do ponto de partida metabólico.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq__item" id="faq-3">
+          <button class="faq__question" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFAQ(this)">
+            <span>Vou ter que cortar alimentos que gosto? O protocolo é muito restritivo?</span>
+            <svg class="faq__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer" id="faq-answer-3" role="region">
+            <p>
+              Não. Restrição severa é clinicamente ineficaz a longo prazo e está associada a aumento do cortisol e disfunção do eixo HPA. O protocolo é baseado em <strong>estratégias de substituição e timing</strong>, não eliminação. Café, chocolate e jantares sociais são integrados ao plano — dentro de uma lógica de densidade nutricional e contexto metabólico.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA FINAL / AGENDAR
+  ═══════════════════════════════════════════ -->
+  <section class="cta-final" id="agendar">
+    <div class="container cta-final__inner">
+      <span class="eyebrow eyebrow--light">Próximo passo</span>
+      <h2 class="cta-final__title">Comece com uma<br/><em>Avaliação Metabólica Completa.</em></h2>
+      <p class="cta-final__body">
+        60 minutos de anamnese clínica, análise de exames e construção do seu protocolo inicial. Vagas abertas para este mês.
+      </p>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20minha%20Avalia%C3%A7%C3%A3o%20Metab%C3%B3lica." class="btn btn--primary btn--lg" id="cta-final-btn" target="_blank" rel="noopener noreferrer">
+        Agendar pelo WhatsApp
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.998 0C5.37 0 0 5.373 0 12c0 2.117.555 4.099 1.523 5.823L.057 24l6.333-1.608A11.956 11.956 0 0012 23.999c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12.002-12zm.003 21.818a9.81 9.81 0 01-5.006-1.37l-.358-.214-3.759.955.987-3.617-.233-.371A9.817 9.817 0 012.18 12c0-5.426 4.394-9.82 9.82-9.82 5.427 0 9.82 4.394 9.82 9.82 0 5.427-4.393 9.818-9.819 9.818z"/></svg>
+      </a>
+      <p class="cta-final__note">Ou ligue: <a href="tel:+5511999999999">(11) 9 9999-9999</a> · Segunda a sexta, 8h–18h</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RODAPÉ
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav-logo">Dra. Ana Lúcia Veras</span>
+        <p>Nutricionista Clínica · CRN-3 45.210</p>
+      </div>
+      <div class="footer__links">
+        <a href="#inicio">Início</a>
+        <a href="#metodo">Método</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#agendar">Agendamento</a>
+      </div>
+      <div class="footer__contact">
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:contato@dranavegas.com.br">contato@dranavegas.com.br</a>
+        <span>Av. Paulista, 1.000 — Bela Vista, São Paulo/SP</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Dra. Ana Lúcia Veras · Todos os direitos reservados · Desenvolvido com propósito clínico.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
